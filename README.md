@@ -1,4 +1,4 @@
-# Texture_Organizer
+# Texture Organizer
 an unity scripts that makes materials and assigns some textures for it automatically, good for bulk producing
 
 
