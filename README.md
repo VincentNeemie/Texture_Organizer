@@ -18,3 +18,18 @@ The script works by iterating over all the subfolders in the specified root fold
 The script uses the AssetDatabase class to load and save assets, and the Directory class to search for subfolders and texture files. It also includes error handling and logging to help diagnose any issues that may arise during the material creation process.
 
 To use the script, simply attach it to a GameObject in your Unity scene, configure the public variables as desired, and run the scene. The script will automatically iterate over the subfolders and create materials for each one.
+
+       *MaterialGenerator*
+Documentation:
+
+This is a Unity script that generates a material from a texture file located in a subdirectory of a specified target directory. The script loads the texture file, creates a new material with the Universal Render Pipeline/Lit shader, assigns the texture to the material's base map property, and saves the material asset to the Resources folder.
+
+The script includes two public variables that can be configured in the Unity Editor to customize the functionality of the script:
+
+targetDirectory: The target directory to search for subdirectories containing texture files.
+textureName: The name of the texture file to load and assign to the material's base map property.
+The script works by checking if the target directory exists, then getting the first subdirectory of the target directory. It then creates a new material with the name of the subdirectory and the Universal Render Pipeline/Lit shader. The script loads the texture file specified by the textureName variable, assigns it to the material's base map property, and saves the material asset to the Resources folder.
+
+The script uses the Directory and File classes to search for subdirectories and texture files, and the AssetDatabase class to load and save assets. It also includes error handling and logging to help diagnose any issues that may arise during the material generation process.
+
+To use the script, simply attach it to a GameObject in your Unity scene, configure the public variables as desired, and run the scene. The script will automatically generate a material using the first subdirectory found in the target directory and the specified texture file name. The material will be saved to the Resources folder and can be accessed in code using the Resources.Load function.
