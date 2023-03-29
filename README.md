@@ -1,5 +1,5 @@
 # Texture Organizer
-        *MaterialUpdater:
+        MaterialUpdater:
 Documentation:
 
 This is a Unity script that creates materials from a set of texture files located in subfolders of a specified root folder. The script loads the texture files, assigns them to the correct texture properties, creates a material with the correct rendering pipeline type, and saves the material asset in the same subfolder as the textures.
@@ -19,7 +19,7 @@ The script uses the AssetDatabase class to load and save assets, and the Directo
 
 To use the script, simply attach it to a GameObject in your Unity scene, configure the public variables as desired, and run the scene. The script will automatically iterate over the subfolders and create materials for each one.
 
-       *MaterialGenerator*
+       MaterialGenerator
 Documentation:
 
 This is a Unity script that generates a material from a texture file located in a subdirectory of a specified target directory. The script loads the texture file, creates a new material with the Universal Render Pipeline/Lit shader, assigns the texture to the material's base map property, and saves the material asset to the Resources folder.
